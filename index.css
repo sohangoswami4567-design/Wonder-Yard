@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Fredoka", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-wondery-sky: #BAE6FD;
+  --color-wondery-mint: #D1FAE5;
+  --color-wondery-warm: #FEF3C7;
+  --color-wondery-pink: #FCE7F3;
+  
+  --color-wondery-primary: #0EA5E9;
+  --color-wondery-secondary: #F43F5E;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-slate-800 antialiased overflow-x-hidden bg-[#FFF9F0];
+  }
+}
+
+/* Toy-like Buttons */
+.chunky-button-primary {
+  @apply relative bg-emerald-400 text-white border-4 border-emerald-500 rounded-[2rem] font-black transition-all active:translate-y-1 active:shadow-none;
+  box-shadow: 0 8px 0 0 #059669;
+}
+
+.chunky-button-secondary {
+  @apply relative bg-amber-400 text-slate-900 border-4 border-amber-500 rounded-[2rem] font-black transition-all active:translate-y-1 active:shadow-none;
+  box-shadow: 0 8px 0 0 #D97706;
+}
+
+.chunky-button-pink {
+  @apply relative bg-pink-400 text-white border-4 border-pink-500 rounded-[2rem] font-black transition-all active:translate-y-1 active:shadow-none;
+  box-shadow: 0 8px 0 0 #DB2777;
+}
+
+.bubble-card {
+  @apply bg-white border-8 border-slate-100 rounded-[3rem] shadow-xl hover:scale-105 transition-transform;
+}
